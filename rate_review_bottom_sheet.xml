@@ -1,0 +1,57 @@
+<!-- res/layout/dialog_review.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/review_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leave_review"
+        android:textColor="@color/app_sec_color"
+        android:textSize="18sp"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:theme="@style/RatingBar"
+        android:rating="4" />
+
+
+
+    <EditText
+        android:id="@+id/edit_review"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="@string/write_review_hint"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@color/hint_color"
+        android:inputType="textMultiLine"
+        android:textColor="@color/app_sec_color"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:gravity="start|top"
+        android:padding="8dp"
+        android:background="@drawable/rounded_edittext" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/submit_review"
+        android:backgroundTint="@color/app_sec_color"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"/>
+
+
+
+</LinearLayout>

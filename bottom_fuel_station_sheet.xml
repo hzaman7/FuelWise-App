@@ -1,0 +1,159 @@
+<!-- res/layout/bottom_sheet_layout.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fuel Station"
+            android:textSize="25sp"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/app_sec_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBrand"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:text="Brand"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:textColor="@color/app_sec_color"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:layout_below="@+id/restaurant_name_tv"
+        android:stepSize="0.5"
+        android:isIndicator="true"
+        style="?android:attr/ratingBarStyleSmall"
+        android:theme="@style/RatingBar"
+        android:rating="3.5" />
+
+
+
+    <TextView
+        android:id="@+id/tvViewAllRatings"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:text="@string/view_all_ratings"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:textColor="@color/app_sec_color"
+        android:textStyle="bold" />
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            android:id="@+id/tvPetrolPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Petrol Price"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tvDieselPrice"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Diesel Price"
+            android:layout_below="@+id/tvPetrolPrice"
+            android:textSize="16sp"
+             />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_sec_color"
+        android:text="Address"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvPostcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Postcode"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_weight="10">
+
+
+        <Button
+            android:id="@+id/btnDirections"
+            android:layout_width="0dp"
+            android:layout_weight="4.5"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/show_dir"
+            android:backgroundTint="@color/app_sec_color"
+            android:layout_gravity="end"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnRateAndReview"
+            android:layout_width="0dp"
+            android:layout_weight="4.5"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/submit_review"
+            android:backgroundTint="@color/app_sec_color"
+            android:layout_gravity="end"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

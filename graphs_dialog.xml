@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/review_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/analytics"
+        android:textColor="@color/app_sec_color"
+        android:textSize="25sp"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fuel Prices Comparison"
+        android:textSize="16sp"
+        android:textColor="@color/app_sec_color"
+        android:layout_marginBottom="8dp"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/fuelPriceChart"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EV Charging Prices Comparison"
+        android:textSize="16sp"
+        android:textColor="@color/app_sec_color"
+        android:layout_marginBottom="8dp"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/evPriceChart"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnClearFilters"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/app_sec_color"
+            android:text="@string/clear_filter"
+            android:visibility="invisible"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnCloseBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/app_sec_color"
+            android:text="@string/close"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act_forget_pass_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:background="@color/app_primary_color"-->
+<!--         />-->
+
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+    <ProgressBar
+        android:id="@+id/loading_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:visibility="visible"
+        />
+
+    <ImageView
+        android:id="@+id/filterIVBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/filters"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageView
+        android:id="@+id/graphIVBtn"
+        android:layout_width="40dp"
+        android:layout_below="@+id/filterIVBtn"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_auto_graph"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageView
+        android:id="@+id/logoutIVBtn"
+        android:layout_width="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/graphIVBtn"
+        android:layout_height="40dp"
+        android:src="@drawable/logout"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+</RelativeLayout>
